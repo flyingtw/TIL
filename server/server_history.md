@@ -41,7 +41,7 @@
 - 서버를 설정하기 위한 시간과 노력이 비효율적이다.
 - 미리 성능이 좋은 물리적인 서버를 구매하여 여러 어플리케이션을 설치한다.
 
-![image-20200715132228599](C:\Users\FlyingTW\AppData\Roaming\Typora\typora-user-images\image-20200715132228599.png)
+![image-20200715132228599](C:\Users\FlyingTW\Desktop\TIL\img\자체서버.png)
 
 - 권한 설정, 환경 설정, 방화벽 설정 등 기초 설정이 번거로우며 명령어를 통한 설정이 불가피 하다.
 - 정적으로 미리 설치되어 있는 구조이기 때문에 똑같은 서버를 복제하기가 쉽지 않으며 변화를 주기가 쉽지 않다.
@@ -110,7 +110,7 @@
 - 가상화 기술보다 훨씬 가볍게 동작한다.
 - 이미지 단위로 프로세스 실행 환경을 구성해 준다.
 
-![image-20200715135456572](C:\Users\FlyingTW\AppData\Roaming\Typora\typora-user-images\image-20200715135456572.png)
+![image-20200715135456572](C:\Users\FlyingTW\Desktop\TIL\img\docker.png)
 
 - 도커가 설치되어 있다면 어디서든 컨테이너를 실행할 수 있다.
 
