@@ -118,25 +118,23 @@ docker run -d -p 1234:6379 redis
 
 
 
-(여기부터 시작)
+
 
 ##### MySQL 5.7 컨테이너
 
  RDB중 유명한 MySQL 서버 컨테이너이다.
 
 ```shell
-docker run -d -p 
+docker run -d -p 3306:3306\
+		   -e MySQL_ALLOW_EMPTY_PASSWORD=true\
+		   --name mysql mysql:5.7
 ```
 
 >   -d : detached mode(백그라운드 모드)
 >
->   -p : 컨테이너의 포트를 호스트의 포트로 연결
-
-
-
- -d 옵션을 주게되면 실행후 컨테이너의 ID 를 보여주고 쉘로 돌아온다.(백그라운드에서 컨테이너는 실행되고 있는 상태) 컨테이너의 ID를 이용하여 컨테이너를 제어할 수 있다. 
-
-
-
- -p 옵션을 이용하여 호스트의 1234 포트를 컨테이너의 6379(redis) 포트와 연결하였고 localhost의 1234 포트로 접속하면 redis 를 사용 할 수 있다.
+>   -p : 3306 포트를 호스트에서 그대로 사용
+>
+>   -e : 환경변수 설정. MYSQL의 pw없이 사용한다는 
+>
+>   --name : 컨테이너 이름은 mysql로 할당
 
